@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: 10px;
+  background-color: rgb(17 24 39 / var(1));
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: #d1d5db !important;
+}
+
+html::-webkit-scrollbar-thumb-track{
+  background-color: rgb(17 24 39 / var(1)) !important;
+}
+
+
+
+
+@layer base {
+  html{
+    @apply scrollbar-thumb-gray-300;
+  }
+
+  body {
+    @apply bg-gray-900 text-[#242525] tracking-wide 
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  h3 {
+    @apply text-gray-900;
+  }
+
+  /* nav{
+        @apply z-[500]
+    } */
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5e51e5] to-[#635bbd] text-white;
+  }
+}
+
+input{
+  outline: none;
+}
+
+.h2header {
+  background: radial-gradient(red, blue, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: back 1s infinite ease-in-out;
+}
+
+@keyframes back {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+ nav{
+    z-index: 99999;
+}
+
+.popup{
+    animation: popUp .8s forwards ease-in-out;
+}
+
+@keyframes popUp {
+    0%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+
+
+.popout{
+    animation: popOut .5s forwards ease-in-out;
+}
+
+@keyframes popOut {
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+}
+
+
+
+.text-sphere{
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  margin-top: 100px;
+  user-select: none;
+  position: relative;
+  align-items: center;
+  background-color: blue;
+  justify-content: center;
+}
+
+.tagcloud{
+  top: 0;
+  left: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 0.00625em;
+  transition: .5s ease-in-out;
+}
+
+.tagcloud--item{
+  color: yellow;
+  text-transform: capitalize;
+}
+
+.tagcloud--item:hover{
+  color: darkblue;
+}
+
+
+
+/* .box1{
+    animation: grow1 2s infinite ease-in-out;
+    height: 90%;
+}
+
+@keyframes grow1 {   
+    100%{
+        height: 0%;
+    }
+} */

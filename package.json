@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.9.1",
+    "@next/bundle-analyzer": "^13.0.2",
+    "@react-spring/parallax": "^9.6.1",
+    "cross-env": "^7.0.3",
+    "emailjs": "^4.0.1",
+    "framer-motion": "^7.6.12",
+    "next": "latest",
+    "nprogress": "^0.2.0",
+    "package.json": "^0.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-loaders": "^3.0.1",
+    "react-scroll-parallax": "^3.3.2",
+    "react-spinner": "^0.2.7",
+    "save-dev": "^0.0.1-security",
+    "sharp": "^0.31.2",
+    "TagCloud": "^2.2.0",
+    "tailwind-scrollbar": "^2.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.2"
+  }
+}
