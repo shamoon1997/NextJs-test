@@ -22,7 +22,7 @@ const Experience = () => {
               >
                 <Image
                   fill
-                  src="/projects/logo.jpeg"
+                  src={value.image}
                   className="absolute object-fill rounded-full  "
                 />
               </div>
@@ -38,10 +38,6 @@ const Experience = () => {
                 <p>{value.skills}</p>
               </div>
             </div>
-            {/* <p className='text-[12px]  font-semibold'></p>
-                            <h3 className='text-[23px] text-gray-300 '>{ value.title }</h3>
-                            <p className='font-semibold' >{ value.role }</p>
-                            <p className='px-10 font-bold ' >{ value.overview }</p> */}
           </>
         ))}
       </section>

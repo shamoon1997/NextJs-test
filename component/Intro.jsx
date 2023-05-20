@@ -24,18 +24,28 @@ const Intro = () => {
         <div className="">
           {BriefIntro.map((Value) => (
             <>
-              <div
-                className="relative bg-gray-300 shadow-lg shadow-gray-800 rounded-[5px] rounded-bl-[70px] rounded-br-[150px] rounded-tl-[100px] mx-auto w-[20rem] h-[20rem] md:hover:scale-[1.1] duration-300 md:mt-9 mt-0 overflow-hidden hover:border-[5px] "
-                style={{ borderRadius: " 55% 45% 70% 30% / 44% 80% 20% 56%  " }}
+              {/* <div className="relative bg-gray-300 shadow-lg shadow-gray-800 rounded-[160px] mx-auto w-[20rem] h-[20rem] md:mt-9 mt-0 overflow-hidden "
               >
                 <Image
                   src="/projects/Alkis.png"
                   fill
                   className="absolute  object-fill "
                 />
-              </div>
+              </div> */}
 
-              {/* <p className='uppercase text-sm tracking-widest text-gray-500 ' >{Value.quote}</p> */}
+              <div className="relative bg-gray-300 shadow-lg shadow-gray-800 rounded-[200px] mx-auto w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] overflow-hidden">
+  <div className="aspect-w-1 aspect-h-1">
+    <Image
+      src="/projects/Alkis.png"
+      layout="fill"
+      objectFit="cover"
+      className="rounded-[160px] md:rounded-[180px]"
+    />
+  </div>
+</div>
+
+
+
               <h1 className="py-1 w-screen text-[#5651e5] px-[.4px]  ">
                 {Value.name}
               </h1>
@@ -77,11 +87,3 @@ const Intro = () => {
 
 export default Intro;
 
-// {/* <div className='w-full flex md:flex-row flex-col items-center justify-center  h-[80vh] top-[100vh] '>
-//     <Image
-//         src='/assets/people01.png'
-//         alt='Alkis Savuollis'
-//         width={250}
-//         height={250}
-//     />
-// </div> */}
